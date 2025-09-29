@@ -14,7 +14,9 @@ class ColoringScreen extends StatefulWidget {
 
 class _ColoringScreenState extends State<ColoringScreen> {
   Color selectedColor = Colors.red;
-  final GlobalKey<_ColoringCanvasState> _canvasKey = GlobalKey();
+
+  final GlobalKey<ColoringCanvasState> _canvasKey =
+      GlobalKey<ColoringCanvasState>();
 
   void clearCanvas() {
     _canvasKey.currentState?.clearDrawing();
